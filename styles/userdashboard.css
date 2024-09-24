@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    padding-top: 60px; /* Space for the fixed header */
 }
 
 /* Header styles */
@@ -11,9 +12,15 @@ body {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(90deg, #15AE08 0%, #565EA6 100%), 
-                url('Aug-25-electrician-school.jpg');
+                url('../images/Aug-25-electrician-school.jpg');
     color: white;
     padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps the header on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
 }
 
 .header-left {
@@ -30,11 +37,12 @@ body {
 
 .header-left h1 {
     font-size: 18px;
-    color:linear-gradient(90deg, #15AE08 0%, #565EA6 100%);
+    color: linear-gradient(90deg, #15AE08 0%, #565EA6 100%);
 }
 
 .header-right p {
     font-size: 16px;
+    margin-right: 10%;
 }
 
 /* Dashboard container */
@@ -48,8 +56,6 @@ body {
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
-
-
 
 /* Left Section (Form) */
 .left-section {
@@ -72,16 +78,26 @@ body {
 }
 
 .report-form input, 
-.report-form select, 
-.report-form textarea {
+.report-form select {
     width: 80%;
     padding: 10px;
     margin-bottom: 15px;
-    /* border: 10px solid linear-gradient(90deg, #15AE08 0%, #565EA6 100%); */
     border: 1px solid #15AE08;
     border-radius: 5px;
     font-size: 14px;
 }
+
+.report-form textarea {
+    width: 80%;
+    height: 200px;
+    resize: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #15AE08;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
 .report-form button {
     width: 100%;
     padding: 10px;
@@ -136,7 +152,7 @@ body {
 }
 
 .report-icon {
-    background-color:#565EA6;
+    background-color: #565EA6;
     color: white;
     width: 50px;
     height: 50px;

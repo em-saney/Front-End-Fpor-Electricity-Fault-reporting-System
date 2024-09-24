@@ -20,8 +20,6 @@ body {
 
 .left-section {
     /* Combine both the gradient and image */
-    /* background: linear-gradient(90deg, rgba(21, 174, 8, 0.7) 0%, rgba(86, 94, 166, 0.7) 100%), 
-    url('../images/Aug-25-electrician-school.jpg'); */
     background: linear-gradient(90deg, rgba(21, 174, 8, 0.3) 0%, rgba(86, 94, 166, 0.3) 100%), 
     url('../images/Aug-25-electrician-school.jpg');
     background-size: cover;
