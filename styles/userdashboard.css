@@ -79,9 +79,16 @@ body {
 
 .report-form input, 
 .report-form select {
-    width: 80%;
+    width: 85%;
     padding: 10px;
     margin-bottom: 15px;
+    border: 1px solid #15AE08;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.room-number{
+    width: 85%;
     border: 1px solid #15AE08;
     border-radius: 5px;
     font-size: 14px;
@@ -99,7 +106,7 @@ body {
 }
 
 .report-form button {
-    width: 100%;
+    width: 85%;
     padding: 10px;
     background: linear-gradient(90deg, #15AE08 0%, #565EA6 100%);
     color: white;

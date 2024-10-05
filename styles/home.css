@@ -65,7 +65,7 @@ header {
 /* Main Section */
 .main-section {
     height: 400px;
-    background: linear-gradient(90deg, rgba(21, 174, 8, 0.6) 0%, rgba(86, 94, 166, 0.6) 100%), 
+    background: linear-gradient(90deg, rgba(21, 174, 8, 0.3) 0%, rgba(86, 94, 166, 0.6) 100%), 
                 url('/images/Aug-25-electrician-school.jpg');
     background-size: cover;
     background-position: center;
